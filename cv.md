@@ -4,4 +4,6 @@ title: CV
 permalink: /cv/
 ---
 
-![pic](/pics/204.jpeg)
+![pic1](/pics/cv1.jpg)
+![pic2](/pics/cv2.jpg)
+![pic3](/pics/cv3.jpg)
