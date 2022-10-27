@@ -4,7 +4,7 @@
 
 layout: home
 ---
-![pic](/pics/profile_pic.jpg =250x) 
+![pic](/pics/profile_pic_compressed.jpg) 
 
 
 Hello, it's me Alex. 
