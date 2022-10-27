@@ -17,7 +17,7 @@ Therefore, the case can be made that an advanced and highly automatized 3D recon
 
 Moreover, a case could be made towards the aid of generative design, where projects in progress could use a design "auto-complete function" based on previous data on which the application was trained on. 
 
-I have written a research project which assessed the current state of this topic through a literature review. Additionally, in an attempt to create a software product designed towards a 3d reconstruction based on architectural drawings, small-scale experiments with Computer Vision Libraries were successfully developed on a synthetic dataset. The paper can be accessed [here](/research_project_report_alfi.pdf).
+In the first part of 2022, I conducted a research project which assessed the current state of this topic through a literature review. Additionally, in an attempt to create a software product designed towards a 3d reconstruction based on architectural drawings, small-scale experiments with Computer Vision Libraries were successfully developed on a synthetic dataset. The paper can be accessed [here](/research_project_report_alfi.pdf).
 
 Moving forward, the ambition for my Master Thesis is to build upon previous knowledge and employ Machine Learning methods to automate the aforementioned 3D reconstruction from 2D drawings.
 
