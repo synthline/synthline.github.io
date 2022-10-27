@@ -21,6 +21,6 @@ I have written a research project which assessed the current state of this topic
 
 Moving forward, the ambition for my Master Thesis is to build upon previous knowledge and employ Machine Learning methods to automate the aforementioned 3D reconstruction from 2D drawings.
 
-Particulary, the thesis will revolve around training a convolutional neural network model, that can detect (and hopefully classify) windows and door from achitectural drawings. 
+Particularly, the thesis will revolve around training a convolutional neural network model, that can detect (and hopefully classify) windows and door from achitectural drawings. 
 
 The purpose of the model is to attempt to solve one of the sub-problems of the larger, general 3D reconstruction problem. 
