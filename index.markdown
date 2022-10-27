@@ -9,7 +9,7 @@ layout: home
 
 Hello, it's me Alex. 
 
-I'm a enthusiastic human with passion towards visual arts and technology. 
+I'm an enthusiastic human with passion towards visual arts and technology. 
 
 My vision for the future is to create and help others design exciting products and services, that can empower people by elevating their life quality in a sustainable way.
 
