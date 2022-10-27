@@ -4,7 +4,7 @@
 
 layout: home
 ---
-![pic](/pics/profile_pic_compressed.jpg) 
+![pic](./pics/profile_pic_compressed.jpg) 
 
 
 Hello, it's me Alex. 
@@ -17,7 +17,7 @@ In my spare time, I like to design and build IoT- projects with different Arduin
 
 I enjoy long walks and I run regularly whilst listening to tech and business podcasts such as "How I built This", "Business Wars", "Wisdom from the Top" or "FT's Tech Tonic".
 
-I also enjoy consuming most types of visual art, mainly cinema and photography, and I often travel to countries from the former Eastern Communist Bloc where I photo-document the local architecture. --> [click me](https://instagram.com/redconcreteunion)
+I also enjoy consuming most types of visual art, mainly cinema and photography, and I often travel to countries from the former Eastern Communist Bloc where I photo-document the local architecture. To see my work, you can take a look [here](https://instagram.com/redconcreteunion).
 
 I hope to add more content in the near future, but until then, please feel free to reach out if you have any questions. 
 you can also find me on Linkedin [here](https://www.linkedin.com/in/alfi/).
