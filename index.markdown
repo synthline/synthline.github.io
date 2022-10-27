@@ -4,15 +4,15 @@
 
 layout: home
 ---
-![pic](/pics/profile_pic.jpg)
+![pic](/pics/profile_pic.jpg =250x) 
+
 
 Hello, it's me Alex. 
 
-Am enthusiastic human with passion towards tech and arts. 
+I'm a enthusiastic human with passion towards visual arts and technology. 
 
 My vision for the future is to create and help others design exciting products and services, that can empower people by elevating their life quality in a sustainable way.
 
-I obtained a BA in Architectural Technology and Construction Management, and now I am about to finish my MsC. in Software Design.  
 In my spare time, I like to design and build IoT- projects with different Arduino micro-controllers, or with Raspberry Pi boards.
 
 I enjoy long walks and I run regularly whilst listening to tech and business podcasts such as "How I built This", "Business Wars", "Wisdom from the Top" or "FT's Tech Tonic".
