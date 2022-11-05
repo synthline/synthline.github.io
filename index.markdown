@@ -20,6 +20,6 @@ I enjoy long walks and I run regularly whilst listening to tech and business pod
 I also enjoy consuming most types of visual art, mainly cinema and photography, and I often travel to countries from the former Eastern Communist Bloc where I photo-document the local architecture. To see my work, you can take a look [here](https://instagram.com/redconcreteunion).
 
 I hope to add more content in the near future, but until then, please feel free to reach out if you have any questions. 
-you can also find me on Linkedin [here](https://www.linkedin.com/in/alfi/).
+You can contact me via [Linkedin](https://www.linkedin.com/in/alfi/).
 
 See ya :D
