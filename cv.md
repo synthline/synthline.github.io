@@ -10,7 +10,7 @@ permalink: /cv/
 &nbsp;
 &nbsp;
 ### It-Universitetet i København | 08.2020 - 05.2023 (exp.) 
-##### [IT University of Copenhagen](https://https://en.itu.dk
+##### [IT University of Copenhagen](https://https://en.itu.dk)
 #### MSc. Software Design
 &nbsp;
 
