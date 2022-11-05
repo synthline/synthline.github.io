@@ -3,7 +3,6 @@ layout: page
 title: CV
 permalink: /cv/
 ---
-- Name: Alexandru Filip
 - Nationality: Romanian
 - Current residence: Copenhagen, Denmark
 
