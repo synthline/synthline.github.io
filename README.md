@@ -1,99 +1,189 @@
-# brutalist-blog
+# Hamilton <!-- omit in toc -->
 
-## Introduction
+A minimal and beautiful Jekyll theme best for writing and note-taking.
 
-![brutalist-blog dark mode homepage](https://user-images.githubusercontent.com/13270895/131266947-65f2ae83-7d9e-48d7-8cd6-05a1d59df0ab.png)
-![brutalist-blog light mode homepage](https://user-images.githubusercontent.com/13270895/131266950-3a0e0eff-0b15-4f60-ba22-231bcd78fb0c.png)
-![brutalist-blog mobile homepages](https://user-images.githubusercontent.com/13270895/131266952-e245630a-9874-4bde-952c-3c63ebd745e0.png)
+The original purpose of this theme is to be a replacement of the default Jekyll theme -- [Minima](https://github.com/jekyll/minima). Hamilton is an enhancement of Minima but still, keep in minimal.
 
-brutalist-blog is a no frills, fully-responsive, hyper-minimalistic dark/light theme. The theme is heavily inspired by Mark Otto's personal site: https://markdotto.com/
+Please check out the [demo](https://ngzhio.github.io/jekyll-theme-hamilton/).
 
-Demo: https://andrewhwanpark.github.io/brutalist-blog/
+| Skins | Displays |
+| ----- | -------- |
+| Daylight | ![screenshot](screenshot.png) |
+| Sunrise/Sunset | ![screenshot](screenshot-sunrise.png) |
+| Midnight | ![screenshot](screenshot-midnight.png) |
 
-My personal site that uses the same theme: https://andrewhwanpark.github.io/
+## Features <!-- omit in toc -->
 
-#### Features
+- [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag)
+- [Jekyll Feed](https://github.com/jekyll/jekyll-feed)
+- [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
+- [Google Analytics](https://analytics.google.com/)
+- [MathJax](https://www.mathjax.org/)
+- [Disqus](https://disqus.com/)
+- [Font Awesome](https://fontawesome.com/)
+- TOC
+- Customizable head
+- Configurable page navigation
+- Customizable styles and skins
+- Archive pages implemented in pure Liquid
 
-- Automatically changes from dark/light modes depending on the OS settings.
-- Easy integration with Google Analytics.
-- Generates XML sitemap and RSS Atom feed.
-- jekyll-seo-tag to add metadata tags for search engines and social networks to better index and display your site's content.
-- Full markdown support: code blocks and tables are automatically bootstrap components.
+## Table of Contents <!-- omit in toc -->
 
-![code blocks](https://user-images.githubusercontent.com/13270895/126393675-dacc65f1-7dd2-4651-ae2b-0e77eda7cd11.png)
-
-![tables](https://user-images.githubusercontent.com/13270895/126393680-7b7fae57-abd0-4843-a9a1-c4f334b5eaa4.png)
+- [Installation](#installation)
+- [Configuration](#configuration)
+  - [Optional Parameters](#optional-parameters)
+- [Archive Pages](#archive-pages)
+- [MathJax](#mathjax)
+- [TOC](#toc)
+- [Customization](#customization)
+  - [Metadata](#metadata)
+  - [Navigation](#navigation)
+  - [Social Media](#social-media)
+  - [Skins](#skins)
+  - [More Customized Styles](#more-customized-styles)
+- [License](#license)
 
 ## Installation
 
-Clone this repo:
+You can choose one of the following methods to install Hamilton:
 
-    $ git clone https://github.com/andrewhwanpark/brutalist-blog.git
+- Directly specify the `jekyll-theme-hamilton` gem.
 
-If you haven't already, install bundler:
+    1. Add `gem 'jekyll-theme-hamilton'` into your `Gemfile`.
+    2. Add the below lines into your `_config.yml`.
 
-    $ gem install bundler
+        ```yml
+        plugins:
+          - jekyll-theme-hamilton
+        ```
 
-And then execute:
+- If your site is hosted on GitHub Pages, you can use [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) to import the master branch of Hamilton.
 
-    $ bundle install
+    1. Add `gem 'jekyll-remote-theme'` into your `Gemfile`.
+    2. Add the below lines into your `_config.yml`.
 
-Serve the site:
+        ```yml
+        plugins:
+          - jekyll-remote-theme
 
-    $ bundle exec jekyll serve
+        remote_theme: ngzhio/jekyll-theme-hamilton
+        ```
 
-# Installation with Github Pages
+## Configuration
 
-After cloning the repo, checkout to the gh-pages branch.
+After installation, you can run `jekyll serve` to check out your site, but before that, *make sure* the below **required parameters** are configured in your `_config.yml`.
 
-    $ git checkout gh-pages && git pull
+| Parameters | Types | Specifications |
+|:---------- |:----- |:-------------- |
+| `title`    | string | The site title |
+| `disqus`   | string | The Disqus shortname; Unless you don't want to enable the comments system, you must specify this parameter. It is used in the production environment. |
+| `google_analytics` | string | The Google Analytics tracking ID; It is used in the production environment. |
 
-In the directory:
+### Optional Parameters
 
-    $ bundle install
+| Parameters | Types | Specifications |
+|:---------- |:----- |:-------------- |
+| `author`   | string | The name of the author of the site; It would be showed in the copyright statement. |
+| `avatar`   | string | The avatar of the author of the site. |
+| `email`    | string | The email of the author of the site. |
+| `location` | string | The current living location of the author of the site. |
+| `skin`     | string | The skin name. See more information on the [Customization](#customization) section. |
+| `lang`     | string | The language of the site; The default value is `en`. |
+| `paginate` | int    | The number of posts on each page. |
+| `date_format` | string | The date format; The default value is `%b %-d, %Y`. |
+| `subscribe` | boolean | Show the subsribe feed button. |
 
-For local development:
+## Archive Pages
 
-    $ bundle exec jekyll serve
+Hamilton implements some archive templates in pure Liquid. For example, if you want to create a category archive page, set the below parameters on that page:
 
-After tweaking with it, you can publish the site. Under your repository name, click Settings.
+```yml
+---
+layout: archive-taxonomies
+type: categories
+---
+```
 
-![tutorial](https://docs.github.com/assets/images/help/repository/repo-actions-settings.png)
+Or a tag archive page:
 
-In the left sidebar, click Pages.
+```yml
+layout: archive-taxonomies
+type: tags
+```
 
-![tutorial 2](https://docs.github.com/assets/images/help/pages/pages-tab.png)
+Or archive by years:
 
-To see your published site, under "GitHub Pages", click your site's URL.
+```yml
+layout: archive-years
+```
 
-![tutorial 3](https://docs.github.com/assets/images/help/pages/click-pages-url-to-preview.png)
+## MathJax
 
-For a more detailed guide, visit this guide by Github: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
+You can enable MathJax on each post or page, just set `math: true` on that page.
 
-## Usage
+## TOC
 
-### First things first: \_config.yml
+If you want to show the Table of Contents of a post or page on the left sidebar, just set `toc: true` on that page.
 
-First, you should change data in \_config.yml to the appropriate information such as your social links for the footer icons, avatar for navbar logo, title and name of the site, and more crucial information.
+## Customization
 
-### Adding content
+### Metadata
 
-In order to add permanent pages, add in similar fashion to about.md and portfolio.md and add apppropriate data to \_data/navigation.yml.
+You can create a file `_includes/custom-head.html` in your repository, and add any metadata into that page, e.g. favicons.
 
-In order to add blog posts, add in similar fashion to \_posts/2021-07-16-this-post-demonstrates-post-content-styles.md.
+### Navigation
 
-### Custom style changes
+You can create a file `_data/navigation.yml` to configure links to some pages. For example,
 
-If you wish to add custom styling through SCSS or CSS, you can add or edit \_sass/main.scss.
+```yml
+- title: About
+  url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
+```
 
-### Custom domains with Github Pages
+The navigation bar also supports dropdown submenus:
 
-Follow this simple guide: https://medium.com/@xiang_zhou/how-to-add-custom-domain-to-your-jekyll-blog-provided-that-you-built-your-site-using-github-6e1c8bf20afe
+```yml
+- title: About
+  url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
+- title: More
+  sublinks:
+    - title: FAQ
+      url: /faq/
+    - title: Docs
+      url: /docs/
+```
 
-## Contributing
+### Social Media
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/andrewhwanpark/brutalist-blog.
+You can create a file `_data/social.yml` to configure links to your social media. For example,
+
+```yml
+- title: Twitter
+  url: https://twitter.com/ngzhio
+  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/ngzhio/jekyll-theme-hamilton
+  icon: fab fa-github
+```
+
+### Skins
+
+You can select a skin by setting `skin` in `_config.yml`. The built-in skins include `daylight`, `midnight`, `sunrise`, and `sunset`. If you don't specify any skin, Hamilton would dynamically select one in these built-in skins according to different hours in a day.
+
+You can also customize a new skin, for example, a skin called `solarized`. You need to copy [`_sass/hamilton/skins/daylight.scss`](_sass/hamilton/skins/daylight.scss) into your repository and then rename it to `solarized.scss`, and adjust some colors in that file. Finally, specify `skin: solarized` in `_config.yml`.
+
+### More Customized Styles
+
+If you want to create more CSS styles in your site, creating a file `_sass/hamilton/custom-styles.scss`, and putting your code in there, Hamilton would automatically refer to them.
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [MIT License](LICENSE.txt).
