@@ -1,0 +1,6 @@
+- name: About
+  link: /about/
+- name: CV
+  link: /cv/
+- name: Research
+  link: /research/
